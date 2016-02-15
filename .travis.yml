@@ -1,5 +1,6 @@
 deploy:
   provider: script
-  script: bash .travis/deploy.sh
+  script: 
+  - ./.travis/deploy.sh
   on:
     branch: develop
