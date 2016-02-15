@@ -1,3 +1,7 @@
 #!/bin/bash
 
-echo "First test Travis CI"
+set -ev
+
+if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
+	echo "test"
+fi

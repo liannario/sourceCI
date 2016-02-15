@@ -4,10 +4,8 @@ php:
   - 5.6
 
 script:
-  - env
+  - .travis/deploy.sh
 
-deploy:
-  provider: script
-  script: .travis/deploy.sh
-  on:
-    branch: develop
+branches:
+  only:
+    - develop
